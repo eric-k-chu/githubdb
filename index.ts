@@ -3,7 +3,7 @@ import { GitFile } from "./types";
 
 console.log("Hello World");
 
-async function getFile() {
+async function getSHA(): Promise<string> {
   const username = process.env.GITHUB_USERNAME;
   if (!username) throw new Error("need to add GITHUB_USERNAME in .env file.");
 
@@ -11,7 +11,7 @@ async function getFile() {
   if (!pat) throw new Error("need to add GITHUB_PAT in .env file");
 
   const res = await fetch(
-    `https://api.github.com/repos/${username}/githubdb/contents/README.md`,
+    `https://api.github.com/repos/${username}/githubdb/contents/test.json`,
     {
       headers: {
         authorization: `token ${pat}`,
@@ -19,11 +19,12 @@ async function getFile() {
     }
   );
   const data = (await res.json()) as GitFile;
-  console.log(data.sha);
+  return data.sha;
 }
 
 try {
-  getFile();
+  const sha = getSHA();
+  console.log(sha);
 } catch (e) {
   console.error(e);
   process.exit(-1);
