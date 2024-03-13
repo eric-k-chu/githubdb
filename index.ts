@@ -1,5 +1,6 @@
 import "dotenv/config";
-import { GitFile } from "./types";
+import type { GitFile } from "./types";
+import { Octokit } from "octokit";
 
 console.log("Hello World");
 
@@ -33,33 +34,29 @@ async function updateJson(sha: string) {
   const email = process.env.GITHUB_EMAIL;
   if (!email) throw new Error("need to add GITHUB_EMAIL in .env file");
 
+  const octokit = new Octokit({
+    auth: pat,
+  });
+
   const content = {
     greeting: "Hello World",
   };
 
-  const data = {
-    message: "Testing update Data through Node js",
+  await octokit.request("PUT /repos/{owner}/{repo}/contents/{path}", {
+    owner: username,
+    repo: "githubdb",
+    path: "test.json",
+    message: "Testing update data.json through Node js",
     committer: {
       name: "Eric Chu",
       email: email,
     },
     content: btoa(JSON.stringify(content)),
-  };
-
-  const res = await fetch(
-    `https://api.github.com/repos/${username}/githubdb/contents/test.json`,
-    {
-      method: "PUT",
-      headers: {
-        authorization: `token ${pat}`,
-        Accept: "application/vnd.github+json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(data),
-    }
-  );
-
-  if (!res.ok) throw new Error(`${res.status}: An error has occured.`);
+    sha: sha,
+    headers: {
+      "X-GitHub-Api-Version": "2022-11-28",
+    },
+  });
 }
 
 try {
