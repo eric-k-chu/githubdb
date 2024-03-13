@@ -39,15 +39,18 @@ async function updateJson(sha: string) {
     content: btoa(JSON.stringify(content)),
   };
 
-  const res = await fetch(``, {
-    method: "PUT",
-    headers: {
-      authorization: `token ${pat}`,
-      Accept: "application/vnd.github+json",
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify(data),
-  });
+  const res = await fetch(
+    `https://api.github.com/repos/${username}/githubdb/contents/test.json`,
+    {
+      method: "PUT",
+      headers: {
+        authorization: `token ${pat}`,
+        Accept: "application/vnd.github+json",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }
+  );
 
   if (!res.ok) throw new Error(`${res.status}: An error has occured.`);
 }
