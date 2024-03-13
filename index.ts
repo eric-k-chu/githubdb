@@ -1,7 +1,7 @@
 import "dotenv/config";
 import type { GitFile, Greeting } from "./types";
 import { Octokit } from "octokit";
-import { decode64, encode64 } from "./utils";
+import { decode64, encode64 } from "./utils.js";
 
 console.log("Hello World");
 
