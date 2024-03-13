@@ -1,2 +1,3 @@
 # githubdb
-a database simulating a db in GitHub
+
+a repository simulating a db in GitHub
