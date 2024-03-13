@@ -4,8 +4,7 @@ console.log("Hello World");
 
 async function getRepo() {
   const username = process.env.GITHUB_USERNAME;
-  if (!username)
-    throw new Error("need to add GITHUB_USERNAME in .env.local file.");
+  if (!username) throw new Error("need to add GITHUB_USERNAME in .env file.");
 
   const res = await fetch(
     `https://api.github.com/users/${process.env.GITHUB_USERNAME}/repos`
