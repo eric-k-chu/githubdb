@@ -1,10 +1,11 @@
 import "dotenv/config";
-import type { GitFile } from "./types";
+import type { GitFile, Greeting } from "./types";
 import { Octokit } from "octokit";
+import { decode64, encode64 } from "./utils";
 
 console.log("Hello World");
 
-async function getSHA(): Promise<string> {
+async function getFileData(): Promise<GitFile> {
   const username = process.env.GITHUB_USERNAME;
   if (!username) throw new Error("need to add GITHUB_USERNAME in .env file.");
 
@@ -20,11 +21,10 @@ async function getSHA(): Promise<string> {
     }
   );
   if (!res.ok) throw new Error(`${res.status}: An error has occured.`);
-  const data = (await res.json()) as GitFile;
-  return data.sha;
+  return await res.json();
 }
 
-async function updateJson(sha: string) {
+async function updateJson(sha: string, json: Greeting) {
   const username = process.env.GITHUB_USERNAME;
   if (!username) throw new Error("need to add GITHUB_USERNAME in .env file.");
 
@@ -38,10 +38,6 @@ async function updateJson(sha: string) {
     auth: pat,
   });
 
-  const content = {
-    greeting: "Hello World",
-  };
-
   await octokit.request("PUT /repos/{owner}/{repo}/contents/{path}", {
     owner: username,
     repo: "githubdb",
@@ -51,7 +47,7 @@ async function updateJson(sha: string) {
       name: "Eric Chu",
       email: email,
     },
-    content: btoa(JSON.stringify(content)),
+    content: encode64(json),
     sha: sha,
     headers: {
       "X-GitHub-Api-Version": "2022-11-28",
@@ -60,8 +56,11 @@ async function updateJson(sha: string) {
 }
 
 try {
-  const sha = await getSHA();
-  await updateJson(sha);
+  const data = await getFileData();
+
+  const json = decode64<Greeting>(data.content);
+  json.greeting = "YOOOOOO HELLLOOOOO!";
+  await updateJson(data.sha, json);
 } catch (e) {
   console.error(e);
   process.exit(-1);
