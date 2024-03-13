@@ -29,10 +29,13 @@ async function updateJson(sha: string, json: Greeting) {
   if (!username) throw new Error("need to add GITHUB_USERNAME in .env file.");
 
   const pat = process.env.GITHUB_PAT;
-  if (!pat) throw new Error("need to add GITHUB_PAT in .env file");
+  if (!pat) throw new Error("need to add GITHUB_PAT in .env file.");
 
   const email = process.env.GITHUB_EMAIL;
-  if (!email) throw new Error("need to add GITHUB_EMAIL in .env file");
+  if (!email) throw new Error("need to add GITHUB_EMAIL in .env file.");
+
+  const name = process.env.NAME;
+  if (!name) throw new Error("need to add NAME in .env file.");
 
   const octokit = new Octokit({
     auth: pat,
@@ -44,7 +47,7 @@ async function updateJson(sha: string, json: Greeting) {
     path: "test.json",
     message: "Testing update data.json through Node js",
     committer: {
-      name: "Eric Chu",
+      name: name.split("_").join(" "),
       email: email,
     },
     content: encode64(json),
@@ -59,7 +62,7 @@ try {
   const data = await getFileData();
 
   const json = decode64<Greeting>(data.content);
-  json.greeting = "YOOOOOO HELLLOOOOO!";
+  json.greeting = "Hello World!";
   await updateJson(data.sha, json);
 } catch (e) {
   console.error(e);
