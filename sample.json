@@ -1,0 +1,377 @@
+{
+  "lots": [
+    {
+      "id": "12354",
+      "location": "Legacy Towing",
+      "date": 1709878760,
+      "vehicles": [
+        {
+          "vehicleId": "1",
+          "lienholder": "CAPITAL ONE AUTO FINANCE",
+          "state": "CT",
+          "plateNumber": "BG42403",
+          "make": "HYUNDAI",
+          "year": 2018
+        },
+        {
+          "vehicleId": "2",
+          "state": "NY",
+          "plateNumber": "KXN6072",
+          "make": "HONDA",
+          "year": 2021
+        },
+        {
+          "vehicleId": "3",
+          "lienholder": "HYUNDAI MOTOR FINANCE",
+          "state": "FL",
+          "plateNumber": "16KTZ",
+          "make": "KIA",
+          "year": 2022
+        },
+        {
+          "vehicleId": "4",
+          "lienholder": "SANTANDER CONSUMER",
+          "state": "NY",
+          "plateNumber": "LBM7104",
+          "make": "KIA",
+          "year": 2018
+        },
+        {
+          "vehicleId": "5",
+          "state": "CT",
+          "plateNumber": "BL90838",
+          "make": "NISSAN",
+          "year": 2014
+        },
+        {
+          "vehicleId": "6",
+          "state": "PA",
+          "plateNumber": "LLR4925",
+          "make": "VOLKSWAGEN",
+          "year": 2018
+        },
+        {
+          "vehicleId": "7",
+          "state": "IL",
+          "plateNumber": "EC74878",
+          "make": "AUDI",
+          "year": 2005
+        },
+        {
+          "vehicleId": "8",
+          "state": "NY",
+          "plateNumber": "KWZ5610",
+          "make": "MERCURY",
+          "year": 2008
+        },
+        {
+          "vehicleId": "9",
+          "state": "NY",
+          "plateNumber": "KZJ4035",
+          "make": "JEEP",
+          "year": 2006
+        },
+        {
+          "vehicleId": "10",
+          "state": "NY",
+          "plateNumber": "LDD4876",
+          "make": "SUBARU",
+          "year": 2009
+        },
+        {
+          "vehicleId": "11",
+          "state": "PA",
+          "plateNumber": "LNH8229",
+          "make": "FORD",
+          "year": 2007
+        },
+        {
+          "vehicleId": "12",
+          "state": "NJ",
+          "plateNumber": "B18PEN",
+          "make": "SMART",
+          "year": 2010
+        },
+        {
+          "vehicleId": "13",
+          "state": "NJ",
+          "plateNumber": "M49MTC",
+          "make": "HONDA",
+          "year": 2000
+        },
+        {
+          "vehicleId": "14",
+          "state": "NY",
+          "plateNumber": "72400ME",
+          "make": "FREIGHTLINER",
+          "year": 2003
+        },
+        {
+          "vehicleId": "15",
+          "lienholder": "WELLS FARGO AUTO",
+          "state": "NY",
+          "plateNumber": "KTX2454",
+          "make": "HONDA",
+          "year": 2019
+        },
+        {
+          "vehicleId": "16",
+          "lienholder": "CAPITAL ONE AUTO FINANCE",
+          "state": "PA",
+          "plateNumber": "LNY6024",
+          "make": "HYUNDAI",
+          "year": 2019
+        },
+        {
+          "vehicleId": "17",
+          "state": "PA",
+          "plateNumber": "KML6237",
+          "make": "BUICK",
+          "year": 2003
+        },
+        {
+          "vehicleId": "18",
+          "lienholder": "AMERICAN HONDA",
+          "state": "NY",
+          "plateNumber": "KZY437",
+          "make": "HONA",
+          "year": 2012
+        },
+        {
+          "vehicleId": "19",
+          "state": "NY",
+          "plateNumber": "JRM",
+          "make": "CHEVROLET",
+          "year": 2012
+        },
+        {
+          "vehicleId": "20",
+          "state": "IL",
+          "plateNumber": "DL47411",
+          "make": "HONDA",
+          "year": 2004
+        },
+        {
+          "vehicleId": "21",
+          "state": "PA",
+          "plateNumber": "MDK1326",
+          "make": "FORD",
+          "year": 2010
+        },
+        {
+          "vehicleId": "22",
+          "lienholder": "MANUFACTURERS AND TRADERS",
+          "state": "OH",
+          "plateNumber": "KBK8140",
+          "make": "BMW",
+          "year": 2005
+        },
+        {
+          "vehicleId": "23",
+          "state": "NY",
+          "plateNumber": "87792NC",
+          "make": "HINO",
+          "year": 2012
+        },
+        {
+          "vehicleId": "24",
+          "state": "MD",
+          "plateNumber": "8EM3741",
+          "make": "MITSUBISHI",
+          "year": 2007
+        },
+        {
+          "vehicleId": "25",
+          "state": "NY",
+          "plateNumber": "LFZ8014",
+          "make": "TOYOTA",
+          "year": 2003
+        },
+        {
+          "vehicleId": "26",
+          "state": "NY",
+          "plateNumber": "KHU1903",
+          "make": "BUICK",
+          "year": 2016
+        },
+        {
+          "vehicleId": "27",
+          "lienholder": "BYRIDER FINANCE, LLC DBA CNAC",
+          "state": "NC",
+          "plateNumber": "RDN8456",
+          "make": "MAZDA",
+          "year": 2013
+        },
+        {
+          "vehicleId": "28",
+          "state": "NY",
+          "plateNumber": "LBK1450",
+          "make": "HONDA",
+          "year": 2005
+        },
+        {
+          "vehicleId": "29",
+          "lienholder": "THRIFT INVESTMENT",
+          "state": "NY",
+          "plateNumber": "LEV7550",
+          "make": "NISSAN",
+          "year": 2017
+        },
+        {
+          "vehicleId": "30",
+          "lienholder": "AMERICAN HONDA",
+          "state": "NY",
+          "plateNumber": "LBE3629",
+          "make": "HONDA",
+          "year": 2020
+        },
+        {
+          "vehicleId": "31",
+          "state": "NY",
+          "plateNumber": "GJE3212",
+          "make": "HONDA",
+          "year": 2012
+        },
+        {
+          "vehicleId": "32",
+          "state": "NY",
+          "plateNumber": "LAV1161",
+          "make": "HONDA",
+          "year": 2005
+        },
+        {
+          "vehicleId": "33",
+          "state": "NY",
+          "plateNumber": "KVJ7525",
+          "make": "NISSAN",
+          "year": 2007
+        },
+        {
+          "vehicleId": "34",
+          "state": "NY",
+          "plateNumber": "KYP2937",
+          "make": "VOLKSWAGEN",
+          "year": 2006
+        },
+        {
+          "vehicleId": "35",
+          "state": "NY",
+          "plateNumber": "LCG4980",
+          "make": "FORD",
+          "year": 2015
+        },
+        {
+          "vehicleId": "36",
+          "lienholder": "CARVANA LLC",
+          "state": "NY",
+          "plateNumber": "LCA6068",
+          "make": "FORD",
+          "year": 2019
+        },
+        {
+          "vehicleId": "37",
+          "lienholder": "CREDIT ACCEPTANCE",
+          "state": "NY",
+          "plateNumber": "KUT3133",
+          "make": "CHEVROLET",
+          "year": 2020
+        },
+        {
+          "vehicleId": "38",
+          "lienholder": "AMERICREDIT FINANCIAL SERVICES",
+          "state": "SC",
+          "plateNumber": "PGB539",
+          "make": "MERCEDES",
+          "year": 2015
+        },
+        {
+          "vehicleId": "39",
+          "lienholder": "MERCEDES-BENZ",
+          "state": "NY",
+          "plateNumber": "LDK5166",
+          "make": "MERCEDES",
+          "year": 2023
+        },
+        {
+          "vehicleId": "40",
+          "lienholder": "AMERICAN HONDA",
+          "state": "NY",
+          "plateNumber": "T674670C",
+          "make": "HONDA",
+          "year": 2019
+        },
+        {
+          "vehicleId": "41",
+          "lienholder": "LENDBUZZ FUNDING LLC",
+          "state": "NY",
+          "plateNumber": "ARKING",
+          "make": "BMW",
+          "year": 2014
+        },
+        {
+          "vehicleId": "42",
+          "state": "NY",
+          "plateNumber": "KZS6631",
+          "make": "FORD",
+          "year": 2000
+        },
+        {
+          "vehicleId": "43",
+          "state": "NY",
+          "plateNumber": "HPB8864",
+          "make": "FORD",
+          "year": 2002
+        },
+        {
+          "vehicleId": "44",
+          "lienholder": "BANK OF AMERICA",
+          "state": "NY",
+          "plateNumber": "LGT6751",
+          "make": "HYUNDAI",
+          "year": 2023
+        },
+        {
+          "vehicleId": "45",
+          "lienholder": "CAPITAL ONE AUTO",
+          "state": "NY",
+          "plateNumber": "LFZ9836",
+          "make": "FORD",
+          "year": 2019
+        },
+        {
+          "vehicleId": "46",
+          "lienholder": "BMW BANK OF NORTH",
+          "state": "NY",
+          "plateNumber": "JDA8118",
+          "make": "BMW",
+          "year": 2007
+        },
+        {
+          "vehicleId": "47",
+          "lienholder": "CAPITAL ONE AUTO",
+          "state": "NY",
+          "plateNumber": "LBX9060",
+          "make": "JEEP",
+          "year": 2016
+        },
+        {
+          "vehicleId": "48",
+          "lienholder": "JPMORGAN CHASE",
+          "state": "NY",
+          "plateNumber": "JRC6089",
+          "make": "HONDA",
+          "year": 2006
+        },
+        {
+          "vehicleId": "49",
+          "state": "NY",
+          "plateNumber": "KTY2419",
+          "make": "HONDA",
+          "year": 2004
+        }
+      ],
+      "address": "131-01 39th Ave Flushing, NY 11354",
+      "about": "I will sell at Public Auction by, on Friday March 08, 2024 at 10:00 o'clock in the morning at Legacy Towing 131-01 39th Ave Flushing, NY 11354 the right, title and interest of the judgment debtors in and to the listed vehicles."
+    }
+  ]
+}
