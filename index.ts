@@ -30,12 +30,19 @@ async function updateJson(sha: string) {
   const pat = process.env.GITHUB_PAT;
   if (!pat) throw new Error("need to add GITHUB_PAT in .env file");
 
+  const email = process.env.GITHUB_EMAIL;
+  if (!email) throw new Error("need to add GITHUB_EMAIL in .env file");
+
   const content = {
     greeting: "Hello World",
   };
 
   const data = {
     message: "Testing update Data through Node js",
+    committer: {
+      name: "Eric Chu",
+      email: email,
+    },
     content: btoa(JSON.stringify(content)),
   };
 

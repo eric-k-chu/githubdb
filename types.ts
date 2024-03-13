@@ -3,6 +3,7 @@ declare global {
     interface ProcessEnv {
       GITHUB_USERNAME: string;
       GITHUB_PAT: string;
+      GITHUB_EMAIL: string;
     }
   }
 }
