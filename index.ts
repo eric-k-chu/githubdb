@@ -1,4 +1,5 @@
 import "dotenv/config";
+import { GitFile } from "./types";
 
 console.log("Hello World");
 
@@ -17,8 +18,8 @@ async function getFile() {
       },
     }
   );
-  const data = await res.json();
-  console.log(data);
+  const data = (await res.json()) as GitFile;
+  console.log(data.sha);
 }
 
 try {
